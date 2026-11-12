@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Woody's Burgers | La hamburguesa que va de acuerdo a tu apetito</title>
+  <meta name="description" content="Woody's Burgers: hamburguesas con carne casera de res, burgers de pollo, papas y complementos. Haz tu pedido o cotiza tu evento por WhatsApp. Desde 2009.">
+  <meta name="theme-color" content="#141414">
+  <meta property="og:title" content="Woody's Burgers">
+  <meta property="og:description" content="La hamburguesa aquí va de acuerdo a tu apetito. Desde 2009.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Kaushan+Script&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand" aria-label="Woody's Burgers, inicio">
+      <img src="assets/logo.jpg" alt="" width="44" height="44">
+      <span><b>Woody's</b> <i>Burgers</i></span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#menu">Menú</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn--yellow btn--sm" data-wa="pedido" href="#" target="_blank" rel="noopener">Pedir ahora</a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__strokes" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__logo">
+        <img src="assets/logo.jpg" alt="Logo de Woody's Burgers" width="751" height="750">
+      </div>
+      <div class="hero__copy">
+        <p class="hero__since">Desde 2009</p>
+        <h1 class="hero__title">
+          <span class="slab">Woody's</span>
+          <span class="script">Burgers</span>
+        </h1>
+        <p class="hero__tag">La hamburguesa que va de acuerdo a tu apetito</p>
+        <div class="hero__cta">
+          <a class="btn btn--yellow" data-wa="pedido" href="#" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+            Hacer un pedido
+          </a>
+          <a class="btn btn--outline" data-wa="evento" href="#" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+            Cotizar evento
+          </a>
+        </div>
+        <a class="hero__phone" href="tel:+528441001075">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#phone"/></svg>
+          844 100 1075
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <h2 class="menu-title">Menú</h2>
+      <p class="section-sub">La hamburguesa que va de acuerdo a tu apetito</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Categorías del menú">
+      <button role="tab" aria-selected="true" data-tab="all">Todo</button>
+      <button role="tab" aria-selected="false" data-tab="burgers">Burgers</button>
+      <button role="tab" aria-selected="false" data-tab="pollo">Pollo</button>
+      <button role="tab" aria-selected="false" data-tab="peques">Peques</button>
+      <button role="tab" aria-selected="false" data-tab="papas">Papas</button>
+      <button role="tab" aria-selected="false" data-tab="complementos">Complementos</button>
+    </div>
+
+    <div class="menu__grid">
+
+      <article class="card" data-cat="burgers">
+        <h3 class="brush">Burger</h3>
+        <ul class="items">
+          <li><div class="item__row"><span class="item__name">Clásica</span><span class="item__price">$80</span></div>
+            <p>Carne casera de res, queso americano, jamón, lechuga, tomate, cebolla y aderezo</p></li>
+          <li><div class="item__row"><span class="item__name">Hawaiana</span><span class="item__price">$85</span></div>
+            <p>Carne casera de res, queso americano, jamón, lechuga, tomate, cebolla y piña asada</p></li>
+          <li><div class="item__row"><span class="item__name">Salchiburger</span><span class="item__price">$85</span></div>
+            <p>Carne casera de res, queso americano, jamón, lechuga, tomate, cebolla, aderezo y salchicha para asar</p></li>
+          <li><div class="item__row"><span class="item__name">Onion</span><span class="item__price">$90</span></div>
+            <p>Carne casera de res, queso americano, jamón, lechuga, tomate, cebolla, aderezo y tres aros de cebolla</p></li>
+          <li class="is-star"><div class="item__row"><span class="item__name">Woody <em>de la casa</em></span><span class="item__price">$95</span></div>
+            <p>Carne casera de res, queso americano, jamón, lechuga, tomate, cebolla, aguacate, pepinillos, tocino y bbq</p></li>
+          <li><div class="item__row"><span class="item__name">Guacamole</span><span class="item__price">$105</span></div>
+            <p>Carne de res casera, lechuga, tocino, guacamole (aguacate, cebolla, tomate, cilantro) y aderezo woody</p></li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="burgers">
+        <h3 class="brush">Especial</h3>
+        <ul class="items">
+          <li><div class="item__row"><span class="item__name">Doble</span><span class="item__price">$105</span></div>
+            <p>Dos carnes caseras de res, dos jamones, dos queso americano, lechuga, tomate, cebolla y aderezo</p></li>
+          <li><div class="item__row"><span class="item__name">Triple</span><span class="item__price">$130</span></div>
+            <p>Tres carnes caseras de res, tres jamones, 3 quesos americano, salchicha para asar, lechuga, tomate, cebolla y aderezo</p></li>
+          <li><div class="item__row"><span class="item__name">Lechuburger</span><span class="item__price">$75</span></div>
+            <p>Carne casera de res, queso americano, jamón, tomate, cebolla y envuelta de lechuga</p></li>
+        </ul>
+        <p class="note">Agrega papas en todas nuestras burgers por <b>$25</b></p>
+      </article>
+
+      <article class="card" data-cat="pollo">
+        <h3 class="brush">Burger Pollo</h3>
+        <ul class="items">
+          <li><div class="item__row"><span class="item__name">Gallo</span><span class="item__price">$80</span></div>
+            <p>Milanesa de pollo en cubos, queso americano, pepinillos, lechuga, tomate, cebolla y aderezo</p></li>
+          <li><div class="item__row"><span class="item__name">Gallo BBQ</span><span class="item__price">$90</span></div>
+            <p>Burger gallo bañada de salsa bbq</p></li>
+          <li><div class="item__row"><span class="item__name">Gallo Buffalo</span><span class="item__price">$90</span></div>
+            <p>Burger gallo bañada de salsa buffalo</p></li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="peques">
+        <h3 class="brush">Pa' los peques</h3>
+        <ul class="items">
+          <li><div class="item__row"><span class="item__name">Baby Res</span><span class="item__price">$55</span></div>
+            <p>Carne casera de res, mayonesa, jamón y queso americano, además incluye juguito y sorpresa</p></li>
+          <li><div class="item__row"><span class="item__name">Baby Pollito</span><span class="item__price">$55</span></div>
+            <p>Milanesa de pollo en cubos, mayonesa y queso amarillo, además incluye juguito y sorpresa</p></li>
+        </ul>
+      </article>
+
+      <article class="card card--wide" data-cat="papas">
+        <img class="card__photo" src="assets/papas.jpg" alt="Papas fritas caseras" width="155" height="110" loading="lazy">
+        <h3 class="brush">Papas fritas</h3>
+        <ul class="items items--2col">
+          <li><div class="item__row"><span class="item__name">Naturales</span><span class="item__price">$45</span></div>
+            <p>220 gr de papas caseras recién cortadas y sal</p></li>
+          <li><div class="item__row"><span class="item__name">Con queso</span><span class="item__price">$55</span></div>
+            <p>220 gr de papas caseras recién cortadas bañadas en queso amarillo</p></li>
+          <li><div class="item__row"><span class="item__name">Salchipapas</span><span class="item__price">$60</span></div>
+            <p>220 gr de papas caseras recién cortadas bañadas en queso amarillo y salchicha para asar</p></li>
+          <li><div class="item__row"><span class="item__name">Crisscut</span><span class="item__price">$50</span></div>
+            <p>220 gr de papas crisscut</p></li>
+          <li><div class="item__row"><span class="item__name">Crisscut Especial</span><span class="item__price">$70</span></div>
+            <p>220 gr de papas crisscut, elote y bañadas en queso amarillo</p></li>
+          <li><div class="item__row"><span class="item__name">Papa Boneless</span><span class="item__price">$85</span></div>
+            <p>220 gr de papas caseras recién cortadas bañadas en queso amarillo, 140 gr de pollo bañados en salsa a tu elección (bbq, buffalo, mango habanero, chipotle o lemon pepper)</p></li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="complementos">
+        <img class="card__photo" src="assets/aros.jpg" alt="Aros de cebolla" width="120" height="90" loading="lazy">
+        <h3 class="brush">Complementos</h3>
+        <ul class="items">
+          <li><div class="item__row"><span class="item__name">Refresco</span><span class="item__price">$20</span></div>
+            <p>Pepsi de 355 ml</p></li>
+          <li><div class="item__row"><span class="item__name">Agua artesanal</span><span class="item__price">$25</span></div>
+            <p>Aguas 100% artesanales de tamarindo, jamaica, limón y pepino con limón (por temporada)</p></li>
+          <li><div class="item__row"><span class="item__name">Aros de cebolla</span><span class="item__price">$45</span></div>
+            <p>6 aros de cebolla caseros al momento</p></li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="menu__foot">
+      <a class="btn btn--yellow" data-wa="pedido" href="#" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+        Pedir por WhatsApp
+      </a>
+      <a class="link-subtle" href="assets/menu.jpg" target="_blank" rel="noopener">Ver menú impreso</a>
+      <p class="small">Aceptamos pago por transferencia.</p>
+    </div>
+  </section>
+
+  <!-- ===== EVENTOS ===== -->
+  <section class="events" id="eventos">
+    <div class="events__inner">
+      <div>
+        <h2 class="brush brush--lg">Llevamos Woody's a tu evento</h2>
+        <p>Cumpleaños, reuniones, fiestas de empresa o lo que estés celebrando: cuéntanos fecha, lugar y número de personas y te armamos una cotización a la medida de tu apetito.</p>
+      </div>
+      <div class="events__cta">
+        <a class="btn btn--yellow btn--lg" data-wa="evento" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+          Cotizar mi evento
+        </a>
+        <a class="hero__phone" href="tel:+528441001075">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#phone"/></svg>
+          o llámanos al 844 100 1075
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="section-head">
+      <h2 class="brush">Contáctanos</h2>
+    </div>
+    <div class="contact__grid">
+      <a class="contact__card" data-wa="pedido" href="#" target="_blank" rel="noopener">
+        <svg class="ico ico--lg" viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+        <span class="contact__label">WhatsApp</span>
+        <span class="contact__value">844 100 1075</span>
+      </a>
+      <a class="contact__card" href="tel:+528441001075">
+        <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#phone"/></svg>
+        <span class="contact__label">Teléfono</span>
+        <span class="contact__value">844 100 1075</span>
+      </a>
+      <a class="contact__card" href="https://www.instagram.com/woodyburger1" target="_blank" rel="noopener">
+        <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ig"/></svg>
+        <span class="contact__label">Instagram</span>
+        <span class="contact__value">@woodyburger1</span>
+      </a>
+      <a class="contact__card" href="https://www.facebook.com/woodysburguer" target="_blank" rel="noopener">
+        <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#fb"/></svg>
+        <span class="contact__label">Facebook</span>
+        <span class="contact__value">Woody's Burgers</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SÍMBOLO FINAL ===== -->
+  <footer class="motto">
+    <div class="motto__strokes" aria-hidden="true"></div>
+    <img class="motto__logo" src="assets/logo.jpg" alt="" width="120" height="120" loading="lazy">
+    <blockquote class="motto__quote">
+      <span class="q">“</span>La hamburguesa aquí va de acuerdo a tu&nbsp;apetito<span class="q">”</span>
+    </blockquote>
+    <p class="motto__since"><span>Desde</span> 2009</p>
+    <div class="motto__social">
+      <a href="https://www.instagram.com/woodyburger1" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#ig"/></svg></a>
+      <a href="https://www.facebook.com/woodysburguer" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#fb"/></svg></a>
+      <a data-wa="pedido" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><use href="#wa"/></svg></a>
+      <a href="tel:+528441001075" aria-label="Llamar"><svg viewBox="0 0 24 24"><use href="#phone"/></svg></a>
+    </div>
+    <p class="motto__copy">© <span id="year">2026</span> Woody's Burgers</p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="fab" data-wa="pedido" href="#" target="_blank" rel="noopener" aria-label="Hacer pedido por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#wa"/></svg>
+  </a>
+
+  <!-- ===== ÍCONOS ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C8.86 3 3.05 8.8 3.05 15.97c0 2.29.6 4.53 1.74 6.5L3 29l6.7-1.75a13 13 0 0 0 6.33 1.62h.01c7.17 0 12.98-5.81 12.98-12.98 0-3.47-1.35-6.73-3.8-9.18A12.9 12.9 0 0 0 16.04 3Zm0 23.68h-.01c-1.94 0-3.84-.52-5.5-1.5l-.39-.23-3.98 1.04 1.06-3.88-.25-.4a10.73 10.73 0 0 1-1.65-5.74c0-5.96 4.85-10.8 10.82-10.8 2.89 0 5.6 1.12 7.64 3.17a10.73 10.73 0 0 1 3.16 7.64c0 5.96-4.85 10.8-10.9 10.8Zm5.93-8.09c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.16-.22.33-.84 1.06-1.03 1.27-.19.22-.38.24-.7.08-.33-.16-1.38-.51-2.62-1.62-.97-.86-1.62-1.93-1.81-2.25-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.55-.73-.56h-.62c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.71s1.17 3.15 1.33 3.36c.16.22 2.3 3.5 5.56 4.91.78.34 1.38.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.42.19-1.55-.08-.14-.3-.22-.62-.38Z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+    <symbol id="ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></symbol>
+    <symbol id="fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.62 23.1 24 18.1 24 12.07Z"/></symbol>
+  </svg>
+
+  <script src="main.js"></script>
+</body>
+</html>
